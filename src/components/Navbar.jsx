@@ -6,7 +6,7 @@ export default function Navbar() {
                 <img src="/navbar-logo.png" alt="Navbar Logo" className="w-32" />
 
                 {/* Right Side: Nav Links */}
-                <ul className="flex space-x-6 text-sm font-medium items-center backdrop-blur-md bg-black/30 rounded-full px-6 py-2">
+                <ul className="flex space-x-6 text-sm font-medium items-center backdrop-blur-md bg-black/40 rounded-full px-6 py-2">
                     <li><a href="#" className="hover:text-gray-200">About</a></li>
                     <li><a href="#" className="hover:text-gray-200">Tickets ↗</a></li>
                     <li><a href="#" className="hover:text-gray-200">Calendar</a></li>
