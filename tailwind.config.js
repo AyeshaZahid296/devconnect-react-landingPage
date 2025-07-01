@@ -8,7 +8,7 @@ export default {
         extend: {
             fontFamily: {
                 pixel: ['"Pixelify Sans"', 'sans-serif'],
-            }
+            },
         },
     },
     plugins: [],
