@@ -1,4 +1,4 @@
-import { FaGithub, FaTelegramPlane, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaTelegramPlane, FaTwitter, FaEnvelope, FaGlobe } from "react-icons/fa";
 
 export default function Footer() {
     return (
@@ -33,7 +33,7 @@ export default function Footer() {
 
                         {/* Language Selector */}
                         <div>
-                            <span className="text-gray-400">🌐 English</span>
+                            <span className="text-gray-400 flex gap-2 items-center"><a href="#"><FaGlobe /></a>  English</span>
                         </div>
 
                         {/* Social Icons */}
