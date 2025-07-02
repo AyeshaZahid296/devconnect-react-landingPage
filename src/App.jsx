@@ -7,9 +7,9 @@ const App = () => {
     <Router>
       <Routes>
 
-        {/* <Route path="/" element={<HeroPage />} /> */}
+        <Route path="/" element={<HeroPage />} />
 
-        <Route path="/" element={<Support />} />
+        {/* <Route path="/" element={<Support />} /> */}
       </Routes>
     </Router>
   )
