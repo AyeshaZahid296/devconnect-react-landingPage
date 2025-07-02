@@ -19,13 +19,17 @@ export default function GetStarted() {
                         <GetStartedCard
                             image="/developer.jpg"
                             title="I'm a Developer"
-                            label="get started"
+                            label="Included in ticket"
+                            redirectTo="/login/developer"
                         />
+
                         <GetStartedCard
                             image="/user.webp"
                             title="I'm a User"
-                            label="get started"
+                            label="Included in ticket"
+                            redirectTo="/login/user"
                         />
+
                     </div>
 
                 </div>

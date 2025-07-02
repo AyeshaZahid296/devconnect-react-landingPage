@@ -1,3 +1,4 @@
+import { FiNavigation } from "react-icons/fi";
 export default function Card({
     icon,
     title,
@@ -23,10 +24,10 @@ export default function Card({
                 {actionLink ? (
                     <a
                         href={actionLink}
-                        className={`flex justify-end text-sm font-semibold ${isDisabled ? "text-gray-500 cursor-not-allowed" : "text-blue-600 hover:underline"
+                        className={`flex gap 3 item-center  justify-end text-sm font-semibold ${isDisabled ? "text-gray-500 cursor-not-allowed" : "text-blue-600 hover:underline"
                             }`}
                     >
-                        {actionText} →
+                        {actionText} <FiNavigation />
                     </a>
                 ) : (
                     <span className="flex justify-end text-sm font-semibold text-gray-600">{actionText}</span>

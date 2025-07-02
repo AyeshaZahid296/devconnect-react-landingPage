@@ -1,7 +1,14 @@
 import React from "react";
-import CTAButton from "./CTAButton"; // Ensure correct import path
+import { useNavigate } from "react-router-dom";
+import CTAButton from "./CTAButton";
 
-export default function GetStartedCard({ image, title, label }) {
+export default function GetStartedCard({ image, title, label, redirectTo }) {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate(redirectTo);
+    };
+
     return (
         <div className="relative flex flex-row bg-white shadow-lg border rounded-md overflow-hidden min-h-[220px]">
             {/* Top-right pink label */}
@@ -25,7 +32,7 @@ export default function GetStartedCard({ image, title, label }) {
                     Discover how you can build, explore, and grow with Ethereum.
                 </p>
 
-                <CTAButton variant="pink" className="w-fit">
+                <CTAButton variant="pink" className="w-fit" onClick={handleClick}>
                     Get Started
                 </CTAButton>
             </div>
